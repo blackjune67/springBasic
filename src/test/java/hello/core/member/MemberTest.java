@@ -20,4 +20,7 @@ public class MemberTest {
         //then
         Assertions.assertThat(member).isEqualTo(findMember);
     }
+
+
+
 }
