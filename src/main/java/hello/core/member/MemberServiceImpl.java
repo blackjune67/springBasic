@@ -8,6 +8,7 @@ public class MemberServiceImpl implements MemberService {
     //private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
+    //생성자를 만들었다, 생성자 주입을 위한 용도.
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
