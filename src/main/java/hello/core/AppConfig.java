@@ -17,16 +17,19 @@ public class AppConfig {
     //Construct Injection
     @Bean //스프링컨테이너 등록!
     public MemberService memberService() {
+        System.out.println("CALL = AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
 
     @Bean
     public MemoryMemberRepository memberRepository() {
+        System.out.println("CALL = AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
 
     @Bean
     public OrderService orderService() {
+        System.out.println("CALL = AppConfig.orderService");
         return new OrderServiceImpl(
                 memberRepository(),
                 discountPolicy());
