@@ -40,3 +40,4 @@ public class ConfigurationSingletonTest {
         System.out.println("bean = " + bean.getClass());
     }
 }
+//깃 테스트
